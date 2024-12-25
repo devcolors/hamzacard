@@ -1,0 +1,126 @@
+@keyframes slideIn {
+    from {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    to {
+        transform: translateX(0); /* End in its normal position */
+    }
+}
+
+a:visited {
+    color: grey; /* Ensure the color remains the same after the link is visited */
+  }
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* position: fixed; */
+    align-self: center;
+    right: 5%;
+    /* height: auto; */
+    overflow-y: auto;
+    /* justify-content: center; */
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nodec {
+    text-decoration: none;
+}
+
+.text {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 100;
+}
+
+.flex {
+    flex: 1;
+    text-align: center;
+}
+
+.half-flex {
+    flex: 0.4;
+    text-align: center;
+}
+
+.spacing1 {
+    margin-top: 10%;
+}
+
+.green {
+    color: green;
+}
+
+.yellow {
+    color: rgb(160, 162, 28);
+}
+
+.red {
+    color: red;
+}
+
+.nounderline {
+    text-decoration: none;
+}
+
+.grey {
+    color: grey;
+    font-weight: bold;
+}
+
+.white {
+    color: white;
+    /* font-weight: bold; */
+}
+
+.mail-button {
+    background-color: rgb(209, 57, 57);
+    border-width: thin;
+    border-radius: 20px;
+    height: 25px;
+    width: 100px;
+  }
+
+.section-line {
+    width: 50%;
+    /* flex: 1; */
+    border-top: 1px solid grey;
+}
+
+.top-section-line {
+    width: 60%;
+    /* flex: 1; */
+    border-top: 1px solid grey;
+}
+
+@media (max-width: 950px) {
+    .secondary-text {
+        font-size: medium;
+    }
+
+    .section-line {
+        width: 50%;
+        /* flex: 1; */
+        border-top: 1px solid grey;
+    }
+    
+    .top-section-line {
+        width: 70%;
+        /* flex: 1; */
+        border-top: 1px solid grey;
+    }
+
+    .bottom-text {
+        font-size: small;
+        text-align: center;
+        margin: 1%;
+    }
+}

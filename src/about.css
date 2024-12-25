@@ -1,0 +1,65 @@
+.flex-top-section {
+    flex: 1;
+    text-align: center;
+}
+
+.flex-section-header {
+    flex: 0.5;
+    text-align: center;
+}
+
+.headshot {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.linkedin {
+    margin-top: 3%;
+    font-size: large;
+    text-decoration: none;
+    color: darkblue;
+}
+
+a.linkedin:visited {
+    color: darkblue;
+}
+
+.aboutme {
+    flex: 0.2;
+    text-align: center;
+    margin-top: 4.5%;
+    color: grey;
+}
+
+.align-left {
+    text-align: center;
+    width: 50%;
+}
+
+.about-row {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+
+.nodec {
+    text-decoration: none;
+}
+
+.divider {
+    margin-top: 2%;
+    width: 50%;
+}
+
+@media (max-width: 950px) {
+    .flex-top-section {
+        flex: 1;
+        text-align: center;
+    }
+    .align-left {
+        text-align: center;
+        width: 80%;
+    }
+  }

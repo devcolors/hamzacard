@@ -1,0 +1,167 @@
+/* General container styling */
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 5%; /* Add padding for spacing */
+  box-sizing: border-box;
+}
+
+/* Logo styling */
+.logo {
+  height: 100px;
+  width: auto;
+  max-width: 270px;
+}
+
+.welcome-text-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome-text-container-sliding {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s ease-in-out;
+  transform: translateX(-400vw);
+}
+
+.welcome-text {
+  color: grey;
+  font-weight:250;
+  text-align: center;
+}
+
+.prompt-text {
+  color: grey;
+  font-weight:250;
+  text-align: center;
+}
+
+#replacingdiv {
+  left: 400vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.prompt-text-container {
+  position: absolute;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%
+}
+
+.slide-in {
+  transition: transform 1s ease-in-out;
+  transform: translateX(-365vw); /* Slide in from the right */
+  /* right: 0; End position */
+}
+
+.red {
+  color: rgb(157, 32, 32);
+}
+
+.header-line {
+  border-top: 1px solid lightgrey;
+}
+
+/* About link styling */
+.about-link {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: grey;
+}
+
+.next-button {
+  background-color: rgb(209, 57, 57);
+  border-width: thin;
+  border-radius: 20px;
+  height: 25px;
+  width: 100px;
+}
+
+.white {
+  color: white;
+}
+
+/* Media query for medium-sized screens */
+@media (max-width: 950px) {
+  .header-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  #replacingdiv {
+    left: 400vw;
+  }
+
+  .prompt-text {
+    font-size: small;
+    text-align: center;
+  }
+
+  .slide-in {
+    transition: transform 1s ease-in-out;
+    transform: translateX(-370vw); /* Slide in from the right */
+    width: 40%;
+  }
+  
+  .nodec {
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: grey; /* Ensure the color remains the same after the link is visited */
+  }
+
+  .logo {
+      height: 80px;
+      margin-bottom: 10px;
+  }
+
+  .about-link {
+      font-size: 0.9rem;
+      margin-top: 5px;
+      color: grey;
+  }
+
+  .welcome-text {
+    font-size: medium
+  }
+  
+  .next-button {
+    margin-top: 10px;
+  }
+}
+
+/* Media query for small screens */
+@media (max-width: 480px) {
+  .header-container {
+      flex-direction: column;
+      padding: 10px 2%;
+  }
+
+  .logo {
+      height: 60px;
+      width: auto;
+  }
+
+  .about-link {
+      font-size: 0.8rem;
+  }
+}
