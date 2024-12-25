@@ -16,7 +16,7 @@ const Welcome = () => {
                 </a>
                 
                 <h3 className='about-link'>
-                    <a className='nodec' href='/about' color='grey' >&#9432; About Hamza</a>
+                    <a className='nodec' color='grey' onClick={() => navigate('/about')}>&#9432; About Hamza</a>
                 </h3>
             </div>
             <hr className='header-line' />
